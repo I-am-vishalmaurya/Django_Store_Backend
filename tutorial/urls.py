@@ -20,6 +20,7 @@ from django.urls import path, include
 
 import appOne.urls
 
+admin.site.site_header = 'Store Front Administration'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('appOne/', include(appOne.urls)),
@@ -28,6 +29,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     import debug_toolbar
-urlpatterns = [
-                      url(r'^__debug__/', include(debug_toolbar.urls)),
-                  ] + urlpatterns
+urlpatterns = [url(r'^__debug__/', include(debug_toolbar.urls)),] + urlpatterns

@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:sqlite:G:\DJANGO-TUTORIALS\tutorial\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="SQLite - db.sqlite3" uuid="2c7bf847-fb86-4661-b53d-9a0ef25c4eac">
-      <driver-ref>sqlite.xerial</driver-ref>
+    <data-source source="LOCAL" name="MySQL - @localhost" uuid="23dcf71a-57db-4722-86ae-e6edeab82b64">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
